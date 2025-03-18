@@ -1,30 +1,30 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { assets } from "../assets/assets";
 import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
-
-    const {track, seekBar, seekBg,playStatus,play,pause,time,previous,next,seekSong} = useContext(PlayerContext);
+    const { track, seekBar, seekBg, playStatus, play, pause, time, previous, next, seekSong, volume, changeVolume } = useContext(PlayerContext);
 
     return (
         <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
             <div className="hidden lg:flex items-center gap-4">
-                <img className="w-12" src={track.image} alt="" srcset="" />
+                <img className="w-12" src={track.image} alt="" />
                 <div>
                     <p>{track.name}</p>
-                    <p>{track.desc.slice(0,12)}</p>
+                    <p>{track.desc.slice(0, 12)}</p>
                 </div>
             </div>
             <div className="flex flex-col items-center gap-1 m-auto">
                 <div className="flex gap-4">
-                    <img className="w-4 cursor-pointer" src={assets.shuffle_icon} alt="" srcset="" />
-                    <img onClick={previous} className="w-4 cursor-pointer" src={assets.prev_icon} alt="" srcset="" />
-                    {playStatus 
-                        ? <img onClick={pause} className="w-4 cursor-pointer" src={assets.pause_icon} alt="" srcset="" />
-                        : <img onClick={play} className="w-4 cursor-pointer" src={assets.play_icon} alt="" srcset="" />
-                    }
-                    <img onClick={next} className="w-4 cursor-pointer" src={assets.next_icon} alt="" srcset="" />
-                    <img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" srcset="" />
+                    <img className="w-4 cursor-pointer" src={assets.shuffle_icon} alt="" />
+                    <img onClick={previous} className="w-4 cursor-pointer" src={assets.prev_icon} alt="" />
+                    {playStatus ? (
+                        <img onClick={pause} className="w-4 cursor-pointer" src={assets.pause_icon} alt="" />
+                    ) : (
+                        <img onClick={play} className="w-4 cursor-pointer" src={assets.play_icon} alt="" />
+                    )}
+                    <img onClick={next} className="w-4 cursor-pointer" src={assets.next_icon} alt="" />
+                    <img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" />
                 </div>
                 <div className="flex items-center gap-5">
                     <p>{time.currentTime.minute}:{time.currentTime.second}</p>
@@ -35,17 +35,16 @@ const Player = () => {
                 </div>
             </div>
             <div className="hidden lg:flex items-center gap-2 opacity-75">
-                <img className="w-4" src={assets.plays_icon} alt="" srcset="" />
-                <img className="w-4" src={assets.mic_icon} alt="" srcset="" />
-                <img className="w-4" src={assets.queue_icon} alt="" srcset="" />
-                <img className="w-4" src={assets.speaker_icon} alt="" srcset="" />
-                <div className="w-20 bg-slate-50 h-1 rounded">
-
-                </div>
-                <img className="w-4" src={assets.mini_player_icon} alt="" srcset="" />
-                <img className="w-4" src={assets.zoom_icon} alt="" srcset="" />
+                <img className="w-4" src={assets.plays_icon} alt="" />
+                <img className="w-4" src={assets.mic_icon} alt="" />
+                <img className="w-4" src={assets.queue_icon} alt="" />
+                <img className="w-4" src={assets.speaker_icon} alt="" />
+                <input type="range" min="0" max="100" value={volume} onChange={changeVolume} className="w-20 cursor-pointer" />
+                <img className="w-4" src={assets.mini_player_icon} alt="" />
+                <img className="w-4" src={assets.zoom_icon} alt="" />
             </div>
         </div>
-    )
-}
+    );
+};
+
 export default Player;

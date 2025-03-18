@@ -6,7 +6,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-[25%] h-full p-2 flex flex-col gap-2 text-white bg-[#121212] mt-[80px]"> {/* Navbar'dan 80px aşağı */}
+    <div className="w-[20%] h-full p-2 flex flex-col gap-2 text-white bg-[#121212] mt-[80px]"> 
       <div className="bg-[#121212] h-[85%] rounded">
         <div className="p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">

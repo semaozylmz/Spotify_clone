@@ -76,42 +76,42 @@ export const albumsData = [
         id:0,
         name: "Top 50 Global",
         image: img8,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Top global hits of the week.",
         bgColor:"#2a4365"
     },
     {   
         id:1,
         name: "Top 50 Turkey",
         image: img9,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Turkey's most popular tracks.",
         bgColor:"#742a2a"
     },
     {   
         id:2,
         name: "Trending Turkey",
         image: img10,
-        desc:"Your weekly update of the most played tracks",
+        desc:"The hottest tracks from Turkey.",
         bgColor:"#22543d"
     },
     {   
         id:3,
         name: "Trending Global",
         image: img16,
-        desc:"Your weekly update of the most played tracks",
+        desc:"The world’s top music trends.",
         bgColor:"#44337a"
     },
     {   
         id:4,
         name: "Mega Hits,",
         image: img11,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Unmissable chart-toppers.",
         bgColor:"#234e52"
     },
     {   
         id:5,
         name: "Happy Favorites",
         image: img15,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your daily dose of joy.",
         bgColor:"#744210"
     }
 ]
@@ -119,66 +119,66 @@ export const albumsData = [
 export const songsData = [
     {
         id:0,
-        name: "Song One",
+        name: "Happiness",
         image: img1,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Feel the joy and let the good vibes flow with every beat.",
         duration:"3:00"
     },
     {
         id:1,
-        name: "Song Two",
+        name: "Sadness",
         image: img2,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Embrace the melancholy and let your heart find peace in the rhythm.",
         duration:"2:20"
     },
     {
         id:2,
-        name: "Song Three",
+        name: "Peace",
         image: img3,
         file:song3,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"A calming melody to help you find serenity and balance.",
         duration:"2:32"
     },
     {
         id:3,
-        name: "Song Four",
+        name: "Curiosity",
         image: img4,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"A track that awakens your senses and sparks your desire to explore.",
         duration:"2:50"
     },
     {
         id:4,
-        name: "Song Five",
+        name: "Anxious",
         image: img5,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Let the music guide you through your worries and bring comfort to your soul.",
         duration:"3:10"
     },
     {
         id:5,
-        name: "Song Six",
+        name: "Tired",
         image: img14    ,
         file:song3,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Unwind and relax with this soothing track, perfect for a restful moment.",
         duration:"2:45"
     },
     {
         id:6,
-        name: "Song Seven",
+        name: "Nostalgia",
         image: img7,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"A journey back in time, evoking memories of days gone by.",
         duration:"2:18"
     },
     {
         id:7,
-        name: "Song Eight",
+        name: "Love",
         image: img12,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Feel the warmth and passion of love with every note.",
         duration:"2:35"
     }
 ]

@@ -11,7 +11,7 @@ const Player = () => {
                 <img className="w-12" src={track.image} alt="" />
                 <div>
                     <p>{track.name}</p>
-                    <p>{track.desc.slice(0, 12)}</p>
+                    <p>{track.desc.slice(0,22)}</p>
                 </div>
             </div>
             <div className="flex flex-col items-center gap-1 m-auto">
